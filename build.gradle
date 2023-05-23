@@ -36,7 +36,7 @@ allprojects {
             }
         }
         project.dependencies {
-            implementation 'androidx.core:core-ktx:1.10.0'
+            implementation 'androidx.core:core-ktx:1.10.1'
             implementation 'androidx.appcompat:appcompat:1.6.1'
         }
     }
@@ -67,7 +67,7 @@ ext {
     FRAMEWORK_PREBUILTS_DIR = "$rootDir/prebuilts/libs"
     accompanist_version = '0.30.1'
     libsu_version = '5.0.5'
-    protocVersion = '3.22.4'
+    protocVersion = '3.23.1'
     room_version = '2.5.1'
     optoVersion = "1.0.18"
 }
@@ -312,12 +312,12 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.3.0"
     implementation "androidx.preference:preference-ktx:1.2.0"
 
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1'
     implementation 'com.github.ChickenHook:RestrictionBypass:2.2'
     implementation 'dev.rikka.tools.refine:runtime:4.3.0'
 
-    implementation platform("androidx.compose:compose-bom:2023.05.00")
+    implementation platform("androidx.compose:compose-bom:2023.05.01")
     implementation "androidx.compose.ui:ui"
     debugImplementation "androidx.compose.ui:ui-tooling"
     implementation "androidx.compose.ui:ui-text-google-fonts"
@@ -325,7 +325,7 @@ dependencies {
     implementation "androidx.compose.material:material-icons-extended"
     implementation "androidx.compose.material:material"
     implementation "androidx.compose.runtime:runtime-livedata"
-    implementation 'androidx.compose.material3:material3:1.1.0-rc01'
+    implementation 'androidx.compose.material3:material3:1.1.0'
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
     implementation "androidx.activity:activity-compose:1.7.1"
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
@@ -340,9 +340,9 @@ dependencies {
     implementation "com.google.accompanist:accompanist-placeholder-material:$accompanist_version"
     implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanist_version"
     implementation "com.google.android.material:material:1.9.0"
-    implementation "io.github.fornewid:material-motion-compose-core:0.12.2"
+    implementation "io.github.fornewid:material-motion-compose-core:0.12.3"
     implementation 'dev.kdrag0n:colorkt:1.0.5'
-    implementation 'io.coil-kt:coil-compose:2.3.0'
+    implementation 'io.coil-kt:coil-compose:2.4.0'
     implementation 'me.xdrop:fuzzywuzzy:1.4.0'
     implementation "com.patrykmichalik.opto:domain:$optoVersion"
     implementation "com.patrykmichalik.opto:core:$optoVersion"
@@ -366,7 +366,7 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:6.0.0'
 
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:2.10"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:2.11"
 }
 
 ksp {
